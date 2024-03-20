@@ -3,7 +3,7 @@ import './App.css'
 import { ImageProfile } from './components/ImageProfile'
 import { Title } from './components/Title'
 import moment from 'moment';
-import imgProfile from './assets/d.jpg';
+import imgProfile from './assets/avatar.jpeg';
 
 function App() {
   const [hide, setHide] = useState(false)
@@ -13,48 +13,53 @@ function App() {
       <div className="leftPort">
         <ImageProfile image={ imgProfile } />
 
-        <Title title="Supanat Patthanang (Toh)">
+        <Title title="Jidapa Siribut (Mook)">
           <h3>ตำแหน่ง : นักศึกษา</h3>
         </Title>
 
         <Title title="Contact">
      
           <p>วันที่ปัจจุบัน: {moment().format("D MMM YYYY")}</p>
-          <p>วันเกิด: {moment("2002/09/26").format("D MMM YYYY")}</p>
+          <p>วันเกิด: {moment("2003/03/14").format("D MMM YYYY")}</p>
           <p style={{ display: hide ? 'none': 'block'}} >
-            Tel : +66981985721
+            Tel : +66988973089
           </p>
           <button onClick={() => setHide(!hide)}>
             {hide ? 'Show': 'Hide'}
           </button>
-          <p>Email : supanat.patthanang@gmail.com</p>
-          <p>33/75 ซ.เทียนทะเล 7 ถนนบางขุนเทียน เเขวงแสมดำ เขตบางขุนเทียน กรุงเทพมหานคร 10150</p>
+          <p>Email : jidapasiribut@gmail.com</p>
+          <p>58/286 ซอยเอกชัย24 แขวงบางขุนเทียน เขตจอมทอง กรุงเทพมหานคร 10150</p>
         </Title>
     
         <Title title="Education">
-          <p>ปริญญาตรี สาขาเทคโนโลยีสารสนเทศ</p>
-          <p>มหาวิทยาลัยราชภัฏสวนสุนันทา</p> 
+          <p>2561-2563</p>
+          <p>โรงเรียนวัดราชโอรส</p> 
+          <p>GPA: 3.31</p>
+          <br></br>
+          <p>2564-ปัจจุบัน</p>
+          <p>มหาวิทยาลัยราชภัฏสวนสุนันทา คณะวิทยาศาสตร์เเละเทคโนโลยี</p> 
+          <p>GPA: 3.74</p>
         </Title>
       </div>
 
       <div className="rightPort">
         <Title title="Profile">
-          <p>ชื่อ: ศุภณัฐ ปัดฐานัง ชื่อเล่น: โต้</p>
-          <p>เป็นนักศึกษาชั้นปีที่3 สาขาเทคโนโลยรสารสนเทศ มหาวิทยาลัยราชภัฏสวนสุนันทา</p>
-          <p>อายุ: 22ปี สัญชาติ: ไทย</p>
-          
+          <p>ชื่อ: จิดาภา ศิริบุตร ชื่อเล่น: มุก</p>
+          <p>อายุ: 21ปี</p>
+          <p>สัญชาติ: ไทย</p>
+          <p>ส่วนสูง: 155 กิโลกรัม</p>
+          <p>น้ำหนัก: 50 กิโลกรัม</p>
         </Title>
 
         <Title title="Work Experience">
-          <p>จัดทำโปรเจคสื่อโซเชียลมีเดียรูปแบบ metaverse เรื่องการอนุรักษ์สัตว์ป่าและพืชพันธุ์</p>
+          <p>จัดทำโปรเจคสื่อโซเชียลมีเดียรูปแบบ VR เรื่องเทศกาลโยนบัว</p>
         </Title>
 
         <Title title="Skills">
-          <p>3D</p>
-          <p>Animation</p>
-          <p>Excel</p>
-          <p>Power point</p>
-          <p>Word</p>
+          <p>Figma</p>
+          <p>Adobe Illustrator</p>
+          <p>Android Studio</p>
+          <p>WordPrees</p>
         </Title>
       </div>
     </main>

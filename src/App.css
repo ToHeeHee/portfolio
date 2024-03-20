@@ -4,7 +4,7 @@
 }
 
 .leftPort{
-  background-color: #ffbd59;
+  background-color: #0077ff;
   width: 400px;
   flex-shrink: 0;
   padding: 30px;
@@ -41,11 +41,16 @@
 }
 
 .titleProt h2{
-  color: #00bf63;
+  color: #f5bc00;
 }
 p{
   margin-bottom: 15px;
   font-weight: 500;
+  color: black;
+}
+h3{
+  
+  color: black;
 }
 
 #root {
