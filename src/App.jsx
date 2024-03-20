@@ -3,6 +3,7 @@ import './App.css'
 import { ImageProfile } from './components/ImageProfile'
 import { Title } from './components/Title'
 import moment from 'moment';
+import imgProfile from './assets/d.jpg';
 
 function App() {
   const [hide, setHide] = useState(false)
@@ -10,7 +11,7 @@ function App() {
   return (
     <main id="main">
       <div className="leftPort">
-        <ImageProfile image="/src/assets/d.jpg" />
+        <ImageProfile image={ imgProfile } />
 
         <Title title="Supanat Patthanang (Toh)">
           <h3>ตำแหน่ง : นักศึกษา</h3>
